@@ -1,0 +1,44 @@
+| Class               | Type | Ordering                         | Thread-safe | Alternative (Thread-safe)                   | One-Line Syntax                              |
+| ------------------- | ---- | -------------------------------- | ----------- | ------------------------------------------- | -------------------------------------------- |
+| `HashMap`           | Map  | ❌ No order                       | ❌ No        | ✅ `ConcurrentHashMap`                       | `Map<K, V> map = new HashMap<>();`           |
+| `LinkedHashMap`     | Map  | ✅ Insertion order                | ❌ No        | 🔄 `Collections.synchronizedMap(...)`       | `Map<K, V> map = new LinkedHashMap<>();`     |
+| `TreeMap`           | Map  | ✅ Sorted (natural or comparator) | ❌ No        | 🔄 `Collections.synchronizedSortedMap(...)` | `SortedMap<K, V> map = new TreeMap<>();`     |
+| `ConcurrentHashMap` | Map  | ❌ Unordered                      | ✅ Yes       | –                                           | `Map<K, V> map = new ConcurrentHashMap<>();` |
+| `Hashtable`         | Map  | ❌ Unordered (legacy)             | ✅ Yes       | ❌ Deprecated for new code                   | `Map<K, V> map = new Hashtable<>();`         |
+
+
+| Use Case                  | Syntax Example                                                              |
+| ------------------------- | --------------------------------------------------------------------------- |
+| Wrap a `HashMap`          | `Map<K, V> map = Collections.synchronizedMap(new HashMap<>());`             |
+| Wrap a `LinkedHashMap`    | `Map<K, V> map = Collections.synchronizedMap(new LinkedHashMap<>());`       |
+| Wrap a `TreeMap` (sorted) | `SortedMap<K, V> map = Collections.synchronizedSortedMap(new TreeMap<>());` |
+
+
+📗 SET TYPES – Java Collections Cheat Sheet
+
+| Class                   | Type | Ordering                         | Thread-safe | Alternative (Thread-safe)                   | One-Line Syntax                               |
+| ----------------------- | ---- | -------------------------------- | ----------- | ------------------------------------------- | --------------------------------------------- |
+| `HashSet`               | Set  | ❌ No order                       | ❌ No        | 🔄 `Collections.synchronizedSet(...)`       | `Set<E> set = new HashSet<>();`               |
+| `LinkedHashSet`         | Set  | ✅ Insertion order                | ❌ No        | 🔄 `Collections.synchronizedSet(...)`       | `Set<E> set = new LinkedHashSet<>();`         |
+| `TreeSet`               | Set  | ✅ Sorted (natural/comparator)    | ❌ No        | 🔄 `Collections.synchronizedSortedSet(...)` | `Set<E> set = new TreeSet<>();`               |
+| `CopyOnWriteArraySet`   | Set  | ✅ Insertion order (array-backed) | ✅ Yes       | ✅ Native thread-safe                        | `Set<E> set = new CopyOnWriteArraySet<>();`   |
+| `ConcurrentSkipListSet` | Set  | ✅ Sorted order (concurrent)      | ✅ Yes       | ✅ Best for concurrent sorted set            | `Set<E> set = new ConcurrentSkipListSet<>();` |
+
+
+| Use Case                  | Syntax Example                                                           |
+| ------------------------- | ------------------------------------------------------------------------ |
+| Wrap a `HashSet`          | `Set<E> set = Collections.synchronizedSet(new HashSet<>());`             |
+| Wrap a `LinkedHashSet`    | `Set<E> set = Collections.synchronizedSet(new LinkedHashSet<>());`       |
+| Wrap a `TreeSet` (sorted) | `SortedSet<E> set = Collections.synchronizedSortedSet(new TreeSet<>());` |
+
+
+
+🔐 Thread-Safety Summary
+| Feature                    | ✅ Thread-Safe Classes                                                            |
+| -------------------------- | -------------------------------------------------------------------------------- |
+| Safe in concurrent env     | `ConcurrentHashMap`, `CopyOnWriteArraySet`, `ConcurrentSkipListSet`, `Hashtable` |
+| Not thread-safe            | `HashMap`, `LinkedHashMap`, `TreeMap`, `HashSet`, `TreeSet`, `LinkedHashSet`     |
+| Use wrappers if needed     | `Collections.synchronizedMap(...)`, `Collections.synchronizedSet(...)`           |
+| Legacy (Avoid in new code) | `Hashtable`                                                                      |
+
+
