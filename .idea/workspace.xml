@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc3e162d-8619-4550-a706-5cd11646dbb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_collections.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java_collections_2nd/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hash_set/Hash_set.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Queue/Priority_queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queue/Priority_queue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,25 +28,33 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2zxUiTrMldAb45awa84vy2bB6Lp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Hash_map.executor": "Run",
+    "Application.Hash_set.executor": "Run",
+    "Application.Tree_set.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Rishav Jain/Desktop/Java_collections"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Comperator.main">
-    <configuration name="Basic_java_collections.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic_java_collections.Main" />
+  <component name="RunManager" selected="Application.Tree_set">
+    <configuration name="Hash_map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hash_map.Hash_map" />
       <module name="Java_collections" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Basic_java_collections.*" />
+          <option name="PATTERN" value="Hash_map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -58,12 +62,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Comperator.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Comperator.main" />
+    <configuration name="Hash_set" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hash_set.Hash_set" />
       <module name="Java_collections" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Comperator.*" />
+          <option name="PATTERN" value="Hash_set.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java_collections_2nd.main" />
+    <configuration name="Tree_set" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hash_set.Tree_set" />
       <module name="Java_collections" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java_collections_2nd.*" />
+          <option name="PATTERN" value="Hash_set.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Comperator.main" />
-        <item itemvalue="Application.main_queue" />
-        <item itemvalue="Application.main" />
-        <item itemvalue="Application.Basic_java_collections.Main" />
+        <item itemvalue="Application.Tree_set" />
+        <item itemvalue="Application.Hash_set" />
+        <item itemvalue="Application.Hash_map" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.main_queue" />
       </list>
     </recent_temporary>
   </component>
@@ -135,19 +139,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Comperator/main.java</url>
-          <line>27</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

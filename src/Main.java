@@ -1,5 +1,15 @@
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+    public static void method1() {
+        throw new ArithmeticException();
     }
+
+    public static void main(String[] args) throws ClassNotFoundException {
+        try {
+            method1();
+        }catch(Exception e){
+
+        }
+    }
+
 }

@@ -1,6 +1,8 @@
 package Queue;
 
+import java.util.LinkedList;
 import java.util.PriorityQueue;
+import java.util.concurrent.PriorityBlockingQueue;
 
 public class Priority_queue {
     public void minqueue(){
@@ -26,5 +28,25 @@ public class Priority_queue {
         while(!maxpq.isEmpty()){
             System.out.println(maxpq.poll());
         }
+
+        PriorityBlockingQueue<Integer>p=new PriorityBlockingQueue<>();//it is thread safe
+
+        LinkedList<Integer>li=new LinkedList<>();
+        li.addLast(12);
+        li.addLast(13);
+        li.addLast(14);
+        li.addLast(15);
+        li.addFirst(90);
+
+        li.forEach((element)-> System.out.println(element));
+
+        LinkedList<Integer>li2=new LinkedList<>();
+        li2.add(0,6);
+        li2.add(1,67);
+        li2.add(2,61);
+        li2.add(3,68);
+        li2.forEach(element -> System.out.println(element));
+
+
     }
 }
