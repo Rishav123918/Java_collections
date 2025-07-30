@@ -33,28 +33,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Hash_map.executor": "Run",
-    "Application.Hash_set.executor": "Run",
-    "Application.Singlenton_synchrinized.main.executor": "Run",
-    "Application.Tree_set.executor": "Run",
-    "Application.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Rishav Jain/Desktop/Java_collections"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Hash_map.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Hash_set.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Singlenton_synchrinized.main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tree_set.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rishav Jain/Desktop/Java_collections&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Singlenton_synchrinized.main">
-    <configuration name="Hash_map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hash_map.Hash_map" />
+}</component>
+  <component name="RunManager" selected="Application.BufferedReader.main">
+    <configuration name="BufferedReader.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BufferedReader.main" />
       <module name="Java_collections" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Hash_map.*" />
+          <option name="PATTERN" value="BufferedReader.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BufferedReader.main" />
         <item itemvalue="Application.Singlenton_synchrinized.main" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.Tree_set" />
         <item itemvalue="Application.Hash_set" />
-        <item itemvalue="Application.Hash_map" />
       </list>
     </recent_temporary>
   </component>
