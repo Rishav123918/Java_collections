@@ -15,5 +15,6 @@ public class single_object {
     public void greet()
     {
         System.out.println("Completed"+Thread.currentThread().getName());
+
     }
 }
