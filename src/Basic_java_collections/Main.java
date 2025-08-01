@@ -12,17 +12,17 @@ public class Main {
         values.add(3);
         values.add(4);
 
-        Iterator<Integer>it= values.iterator();
-        while(it.hasNext()){
-            int val= it.next();
-            System.out.println("variable "+ val);
-            if(val==3){
+        Iterator<Integer>it=values.iterator();
+        while(it.hasNext())
+        {
+            int x=it.next();
+            if(x==3){
                 it.remove();
             }
         }
-        for(int x:values){
-            System.out.println("values : "+x);
+        Iterator<Integer>it1=values.iterator();
+        while(it1.hasNext()){
+            System.out.println(it1.next());
         }
-
     }
 }

@@ -1,5 +1,6 @@
 package Hash_map;
 
+import javax.swing.text.html.HTMLDocument;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,14 +12,25 @@ public class Hash_map {
        mp.put(14,"fgh");
     }
 
+
     public String getvalue(){
       for (Map.Entry<Integer,String>mp1:mp.entrySet()){
-            if(mp1.getValue()=="abc"){
+            if(mp1.getValue().equals("abc")){
                 return mp1.getValue();
             }
         }
       return "";
     }
+
+    public String getvalue1() {
+        for (Map.Entry<Integer, String> st : mp.entrySet()) {
+            if (st.getValue().equals("abc")) {
+                mp.remove(st.getValue().equals("def"));
+            }
+        }
+        return "";
+    }
+
     public Integer getkey(){
         for(Map.Entry<Integer,String>mp1:mp.entrySet()){
             if(mp1.getKey()==2){
